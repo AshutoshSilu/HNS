@@ -1,0 +1,35 @@
+<div>
+    <div>
+        <h4>Select a Name</h4>
+        <mat-form-field>
+            <mat-label>Actor Names</mat-label>
+            <mat-select>
+                @for (food of foods; track food) {
+                  <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+                }
+              </mat-select>
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-card class="example-card" appearance="outlined">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>HNS</mat-card-title>
+              <mat-card-subtitle>Chikalakhandi</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="img1.JPG" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                bred for hunting.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+          
+    </div>
+</div>
